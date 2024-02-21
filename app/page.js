@@ -1,10 +1,9 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SearchBar from "./components/SearchBar";
+import Closet from "./components/Closet";
 
 export default function Home() {
-
-
 
   return (
     <div className="max-w-screen min-h-screen  box-border">
@@ -15,8 +14,7 @@ export default function Home() {
           <SearchBar/>
         </div>
         <div className="border-solid border-2 w-2/3 p-5">
-          Closet Display
-          
+          <Closet/>
         </div>
         
       </div>

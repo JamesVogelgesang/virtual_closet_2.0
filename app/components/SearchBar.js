@@ -42,15 +42,15 @@ const SearchBar = () => {
   }
 
   return (
-    <div className='flex justify-center flex-wrap overflow-hidden gap-4 items-center'>
+    <div className='flex justify-center flex-wrap overflow-hidden gap-4 items-center py-6'>
       <div className='justify-center'>
         <label htmlFor='searchbar' className='text-sm'>Search Location:  </label>
         <input id="searchbar" placeholder=' London, etc.' className='border-solid border-2 text-center max-h-6 max-w-40 rounded-xl text-sm' value={location} onChange={(e) => setLocation(e.target.value)}></input>
-        <button className='border-solid border-2 text-xs ml-3 rounded-xl max-h-6 px-1 bg-[#CEEDDB] border-[#CEEDDB] hover:font-extrabold' onClick={() => getWeather(location)}>Search</button>
+        <button className='border-solid border-2 text-xs ml-3 rounded-xl max-h-6 px-1 bg-white border-slate-500 hover:font-extrabold' onClick={() => getWeather(location)}>Search</button>
       </div>
   
       <h2 className='font-semibold mt-4 mb-1 text-left'>Current Weather:</h2>
-      {data.tempf ? <img src={data.image} alt='Weather icon'></img> : <img src="/info.png"></img>}
+      {data.tempf ? <img src={data.image} alt='Weather icon'></img> : <img src="icons/info.png"></img>}
 
       <div className='flex gap-1 mt-3'>
         <label>Imperial </label>
