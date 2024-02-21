@@ -8,8 +8,7 @@ const closetPage = () => {
   return (
     <div>
       <Header />
-      <h1>Closet Page</h1>
-      <div>
+      <div className=''>
         <Closet />
       </div>
     </div>

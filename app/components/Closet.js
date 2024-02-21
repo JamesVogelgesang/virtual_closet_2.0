@@ -1,6 +1,6 @@
 import React from 'react'
 import Clothing from './Clothing'
-import { usePathname } from 'next/navigation'
+import ClosetNav from './ClosetNav'
 
 
 const getClothes = async() => {
@@ -95,48 +95,53 @@ export default async function Closet() {
     )
   })
   
-  // TODO: 
-  // fix the css to work on either page (try this first)
-  // conditionally render the closet depending on what URL user is at
-  // 
+
 
   return (
-    <div className={'flex text-center p-2 mx-80 my-10 border-black border-8 rounded gap-6' }>
+    <div className='flex flex-col' >
+      <div className='bg-slate-200'>
+        <ClosetNav />
+      </div>
 
-      <div className='flex flex-col w-1/5'>
-        <div className='underline font-bold text-xl py-2'>Hats</div>
-        <div>
-          {hats}
+      <div className='flex text-center rounded gap-4' id='closetComponent'>
+
+        <div className='flex flex-col w-1/5'>
+          <div className=' font-bold text-xl py-2'>Hats</div>
+          <div>
+            {hats}
+          </div>
         </div>
+        
+        <div className='flex flex-col w-1/5'>
+          <div className=' font-bold text-xl py-2'>Jackets</div>
+          <div>
+            {jackets}
+          </div>
+        </div>
+
+        <div className='flex flex-col w-1/5'>
+          <div className=' font-bold text-xl py-2'>Shirts</div>
+          <div>
+            {shirts}
+          </div>
+        </div>
+
+        <div className='flex flex-col w-1/5'>
+          <div className=' font-bold text-xl py-2'>Pants</div>
+          <div>
+            {pants}
+          </div>
+        </div>
+
+        <div className='flex flex-col w-1/5'>
+          <div className=' font-bold text-xl py-2'>Shoes</div>
+          <div>
+            {shoes}
+          </div>  
+        </div>
+
       </div>
       
-      <div className='flex flex-col w-1/5'>
-        <div className='underline font-bold text-xl py-2'>Jackets</div>
-        <div>
-          {jackets}
-        </div>
-      </div>
-
-      <div className='flex flex-col w-1/5'>
-        <div className='underline font-bold text-xl py-2'>Shirts</div>
-        <div>
-          {shirts}
-        </div>
-      </div>
-
-      <div className='flex flex-col w-1/5'>
-        <div className='underline font-bold text-xl py-2'>Pants</div>
-        <div>
-          {pants}
-        </div>
-      </div>
-
-      <div className='flex flex-col w-1/5'>
-        <div className='underline font-bold text-xl py-2'>Shoes</div>
-        <div>
-          {shoes}
-        </div>  
-      </div>
     </div>
   )
 }

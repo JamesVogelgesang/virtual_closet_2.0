@@ -1,4 +1,5 @@
 import React from 'react'
+import CardIcons from "./CardIcons"
 
 
 const Clothing = (props) => {
@@ -30,7 +31,7 @@ const Clothing = (props) => {
   
 
   return (
-    <div className='border-black border-2 py-2 m-2 rounded'>
+    <div className='border-black border-2 py-2 rounded' id='cardComponent'>
       <div className='flex'>
         <img src={props.image ? props.image : "icons/info.png"} className='w-20 ml-auto mr-auto my-2 border-2 rounded'></img>
       </div>
@@ -44,6 +45,7 @@ const Clothing = (props) => {
   
         <div className='flex ml-4 mr-6 justify-center items-center'>{getWeatherIcon(props.weatherType)}</div>
 
+      <CardIcons />
     </div>
   )
 }

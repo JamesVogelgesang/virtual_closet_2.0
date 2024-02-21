@@ -13,7 +13,7 @@ export default function Home() {
         <div className="border-solid border-2 w-1/3 p-5">
           <SearchBar/>
         </div>
-        <div className="border-solid border-2 w-2/3 p-5">
+        <div className="border-solid border-2 w-2/3" id="closet_container">
           <Closet/>
         </div>
         

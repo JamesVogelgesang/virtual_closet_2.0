@@ -6,3 +6,15 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* #closet_container{
+    --container-width: 100%
+}
+
+#cardComponent{
+    width: calc((100% - (2 * var(--padding)) - (4 * var(--gap))) / 5);;
+}
+
+#closetComponent {
+    width: calc((100% - (2 * var(--padding)) - (4 * var(--gap))) / 5);
+} */
