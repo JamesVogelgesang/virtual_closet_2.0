@@ -45,7 +45,7 @@ const Clothing = (props) => {
   
         <div className='flex ml-4 mr-6 justify-center items-center'>{getWeatherIcon(props.weatherType)}</div>
 
-      <CardIcons />
+      <CardIcons id={props.id}/>
     </div>
   )
 }

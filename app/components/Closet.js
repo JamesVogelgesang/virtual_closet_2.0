@@ -12,7 +12,7 @@ const getClothes = async() => {
     }
     return res.json()
   } catch (error) {
-    console.log('Error loading topics: ', error)
+    console.log('Error loading clothing: ', error)
   }
 }
 
@@ -43,7 +43,8 @@ export default async function Closet() {
   const hats = hatList.map(h => {
     return(
       <Clothing 
-      key={h._id} 
+      key={h._id}
+      id={h._id} 
       name={h.name}
       clothesType={h.clothesType}
       weatherType={h.weatherType}
@@ -55,6 +56,7 @@ export default async function Closet() {
     return(
       <Clothing 
       key={j._id} 
+      id={j._id} 
       name={j.name}
       clothesType={j.clothesType}
       weatherType={j.weatherType}
@@ -65,7 +67,8 @@ export default async function Closet() {
   const shirts = shirtList.map(s => {
     return(
       <Clothing 
-      key={s._id} 
+      key={s._id}
+      id={s._id} 
       name={s.name}
       clothesType={s.clothesType}
       weatherType={s.weatherType}
@@ -77,6 +80,7 @@ export default async function Closet() {
     return(
       <Clothing 
       key={p._id} 
+      id={p._id} 
       name={p.name}
       clothesType={p.clothesType}
       weatherType={p.weatherType}
@@ -87,7 +91,8 @@ export default async function Closet() {
   const shoes = shoeList.map(s => {
     return(
       <Clothing 
-      key={s._id} 
+      key={s._id}
+      id={s._id}  
       name={s.name}
       clothesType={s.clothesType}
       weatherType={s.weatherType}

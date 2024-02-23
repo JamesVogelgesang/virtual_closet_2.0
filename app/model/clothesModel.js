@@ -16,7 +16,7 @@ const clothesSchema = new mongoose.Schema(
             enum: ['Snow', 'Rain', 'Cold', 'Hot', 'Moderate', 'Sunny', 'Overcast'],
             required: [true, 'Choose 1 or more types of weather']
         },
-        picture: {
+        image: {
             type: String,
             get: v => `${root}${v}`
           } 
